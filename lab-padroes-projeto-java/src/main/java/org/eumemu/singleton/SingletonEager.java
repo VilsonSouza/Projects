@@ -1,0 +1,15 @@
+package org.eumemu.singleton;
+/**
+ * Singleton "apressado"
+ * @author VilsonSouza
+ */
+public class SingletonEager {
+    private static SingletonEager instancia= new SingletonEager();
+
+    private SingletonEager() {
+        super();
+    }
+    public static SingletonEager getInstancia(){
+        return instancia;
+    }
+}
